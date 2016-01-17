@@ -22,11 +22,11 @@ To install them in Fedora:
 
 Now, download the project by running
 
-    git clone https://github.com/sigmakey/Durocher_CSCI2270_FinalProject.git
+    git clone https://github.com/surajr/Analytics_Hummingbird.git
     
 in a terminal, and then change to the directory you just downloaded:
     
-    cd Durocher_CSCI2270_FinalProject
+    cd Analytics_Hummingbird
 
 Finally, compiling the example program is as simple as running
 
@@ -48,13 +48,6 @@ to run the example program, which downloads a certain user's anime library and a
 
 Documentation on how the library works can be found in the library implementation files Library.cpp and LibraryEntry.cpp and their associated header files.
 
-### Group Members
-
-Hjalte Durocher
-
-### Contributors
-
-None, yet.
 
 ### Known Bugs
 
@@ -67,12 +60,4 @@ terminate called after throwing an instance of 'std::logic_error'
 
 * Sometimes cURL (or perhaps something else) seems to hang or get stuck while getting a user's library in getLibrary(). (This is probably the case if it takes more than a minute to download).
     
-### Future Features
 
-There is a bunch of information returned by the Hummingbird API that isn't being stored yet. See [the official Hummingbird API reference](https://github.com/hummingbird-me/hummingbird/wiki/API-v1-Structures) for a full list of all the fields in the Anime and Library entry objects. Some of the ones that aren't being used yet include the URL to the corresponding Hummingbird anime page, started/finished airing dates, age rating, user's notes, times rewatched, rewatching status, etc. Adding these would be as simple as adding the corresponding strings and getters in the LibraryEntry class and making sure we parse the JSON objects for the information when want in `getLibrary()` and the LibraryEntry constructor.
-
-Similarly, the rating system is not fully supported right now (no simple/advanced modes).
-
-In the future there should also be a class that contains information about the specific user, like a bio and their favorites.
-
-Ultimately, I would like to add the ability to use this library to update anime library entries, like marking episodes watched or shows completed, and have the changes sync with the Hummingbird website.
