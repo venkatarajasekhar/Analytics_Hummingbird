@@ -22,6 +22,7 @@ int printMenu(string username)
     cout << "6. Get more information about a show" << endl;
     cout << "7. Quit" << endl;
 
+
     string in;
     getline(cin, in);
 
