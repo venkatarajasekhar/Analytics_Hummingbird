@@ -22,6 +22,7 @@
    user on Hummingbird.me, otherwise the call to getLibrary will fail. Internet
    access is also required for cURL to work!
 
+
    Post-conditions: user's anime library has been downloaded from the Hummingbird
    API, parsed into LibraryEntry objects using libjson-c, and stored in hashTable,
    including all metadata defined in the LibraryEntry class. cURL has been globally
