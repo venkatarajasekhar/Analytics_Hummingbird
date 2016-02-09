@@ -2,8 +2,7 @@
 
 ### Summary
 
-This library allows you to interface with the Hummingbird.me API from within your C++ application. [Hummingbird.me](https://hummingbird.me) is an anime tracking site that lets users keep track of shows that they are currently watching, plan to watch, have completed, have "on hold," or have "dropped". At the moment this library only lets you download a certain user's "anime library," which contains all of the anime that they have on any of their lists. You can then search the anime library for specific entries and get more information about them, like a synopsis, how many episodes the user has watched, what the show's genres are, ratings, etc.
-
+A C++ library that interfaces with [Hummingbird.me](https://hummingbird.me) API which allows users to search anime library to get information like ratings, genres and synopsis of the shows that user has watched and keep track of completed, on hold and dropped shows.   
 ### System Requirements
 
 This project only works on Linux right now. It requires an internet connection to download information from Hummingbird.
